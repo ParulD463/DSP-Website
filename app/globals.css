@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@keyframes spinY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.spin-on-hover-y:hover {
+  animation: spinY 1s linear;
+}
+
+.thin-line {
+  height: 1px;
+}
+
+.black-white-button {
+  background-color: black;
+  color: white;
+  padding: .5rem 1.5rem; /* Adjust padding as needed */
+  border-radius: 20px;  /*Adjust border-radius as needed */
+  border: 1.5px solid black;
+  font-weight:400; /* normal*/
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.black-white-button:hover {
+  background-color: white;
+  color: black;
+}
