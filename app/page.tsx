@@ -6,13 +6,26 @@ import Link from 'next/link';
 import Hero from '../app/components/Hero'
 import CorePillar from '../app/components/CorePillar'
 import Navbar from '../app/components/navbar'
-
+import 'flowbite';
 
 export default function Home() {
 
   return (
     <>
-      <Navbar /> 
+       
+      <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" className="black-button mb-3 mt-4 mr-20 hover:bg-black-800" type="button">About </button>
+
+      
+
+      <div id="dropdownHover" className="z-20 hidden bg-black divide-y divide-white-100 rounded-lg shadow w-44 dark:bg-white-700">           
+              <Link href="/OurChapter" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
+                Our Chapter           
+              </Link>
+              <Link href="/History" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
+                History            
+              </Link>
+              <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+      </div>                
       <Hero />
 
       {/* "Who We Are" Section (Static) */}
@@ -33,7 +46,7 @@ export default function Home() {
           fontSize: '25px', 
           fontWeight: '700',
           textTransform: 'uppercase',
-          color: 'black'
+          color: 'white'
         }}>
           Who We Are
         </h2>
@@ -51,7 +64,7 @@ export default function Home() {
             lineHeight: '23.8px',
             width: '858px',
             textAlign: 'center',
-            color: 'black'
+            color: 'white'
           }}>
             The Pi Chi Chapter of Delta Sigma Pi is the largest and oldest co-ed professional business fraternity at the University of California, Santa Cruz. Since our founding in 2010, we have been dedicated to creating an environment that gives our brothers an opportunity to grow personally and professionally. As a group of inspired young professionals, we believe in giving back to the community that has shaped us into the people we are today.  
           </p>
@@ -69,7 +82,7 @@ export default function Home() {
           justifyContent: 'center',
           width: '100%'
         }}>
-        <h2 className='font-Lato text-4xl font-medium text-transform:uppercase text-back underline underline-offset-8 decoration-1'>
+        <h2 className='font-Lato text-4xl font-medium text-transform:uppercase text-white underline underline-offset-8 decoration-1'>
           Core Pillars
         </h2>
       </div>
@@ -85,7 +98,7 @@ export default function Home() {
       </div>
 
       <div>
-        <h2 className='text-center ml-52 mt-36 font-Lato text-3xl font-medium uppercase text-black tracking-tighter underline underline-offset-8 decoration-1 '>
+        <h2 className='text-center ml-52 mt-36 font-Lato text-3xl font-medium uppercase text-white tracking-tighter underline underline-offset-8 decoration-1 '>
           A Message From Our President
         </h2>
       </div>
@@ -101,41 +114,41 @@ export default function Home() {
 
         </div>
         <div className="ml-20 mt-6 ">
-          <div className='mr-72 text-start font-Lato text-lg font-thin text-black tracking-tight text-wrap antialiased'> 
+          <div className='mr-72 text-start font-Lato text-lg font-thin text-white tracking-tight text-wrap antialiased'> 
             Welcome to America’s premier and foremost co-ed professional business fraternity, Delta Sigma Pi!
           </div>
 
-          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-black tracking-tighter text-wrap antialiased'> 
+          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-white tracking-tighter text-wrap antialiased'> 
             Our Pi Chi Chapter at UC Santa Cruz is the oldest and largest business organization on campus. Founded in 2010; since then, we've grown quite a bit, with over 330 initiated members! Every member embodies our commitment to developing our professional lives, giving back to our community, and treasuring the lifelong bonds we make with one another along the way. Our vast alumni network spans the entirety of the Bay Area, the larger California region, and the entire country. 
           </div>
 
-          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-black tracking-tighter text-wrap antialiased'> 
+          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-white tracking-tighter text-wrap antialiased'> 
             Brothers and alumni from Delta Sigma Pi work in fields such as accounting, auditing, investment banking, consulting, marketing, business analytics, product management, human resources, sales, software engineering, technology development, network engineering, and many more.          
           </div>
 
-          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-black tracking-tighter text-wrap antialiased'> 
+          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-white tracking-tighter text-wrap antialiased'> 
             Brothers and alumni from Delta Sigma Pi work in fields such as accounting, auditing, investment banking, consulting, marketing, business analytics, product management, human resources, sales, software engineering, technology development, network engineering, and many more.            
           </div>
 
-          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-black tracking-tighter text-wrap antialiased'> 
+          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-white tracking-tighter text-wrap antialiased'> 
             Since joining Delta Sigma Pi, I've discovered a community of like-minded and driven individuals, who support my academic and career advancement. I've improved my interviewing skills, leveraged alumni connections to land internship opportunities, and gained a family. Delta Sigma Pi has pushed me to elevate my purpose, make memories, and learn many valuable lessons I'll never forget; I hope to continue sharing them with others who are also interested in pursuing a similar path.           
           </div>
 
-          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-black tracking-tighter text-wrap antialiased'> 
+          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-white tracking-tighter text-wrap antialiased'> 
             We are committed and dedicated to helping you grow. Delta Sigma Pi creates a space for individuals with bold and passionate dreams to come together and achieve success. Whether it's academic help, career consulting, or joining a group of skilled professionals, Delta Sigma Pi will always foster you with the resources you desire. 
           </div>
 
-          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-black tracking-tighter text-wrap antialiased'> 
+          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-white tracking-tighter text-wrap antialiased'> 
             Are you ready to be a Deltasig? Do you want to expand your potential? Come join us at our Fall 2023 Recruitment!          
           </div>
 
-          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-black tracking-tighter text-wrap antialiased'> 
+          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-white tracking-tighter text-wrap antialiased'> 
             Let's get back to business, I look forward to seeing you during Recruitment Week!          
           </div>
 
-          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-black tracking-tighter text-wrap antialiased'> Fraternally yours, </div>
-          <div className='mr-60 text-start font-Lato text-base font-thin text-black tracking-tighter text-wrap antialiased'> Heather Robinson </div>
-          <div className='mr-60 text-start font-Lato text-base font-thin text-black tracking-tighter text-wrap antialiased'> President 2023-2024 </div>
+          <div className='mr-60 text-start mt-3 font-Lato text-base font-thin text-white tracking-tighter text-wrap antialiased'> Fraternally yours, </div>
+          <div className='mr-60 text-start font-Lato text-base font-thin text-white tracking-tighter text-wrap antialiased'> Heather Robinson </div>
+          <div className='mr-60 text-start font-Lato text-base font-thin text-white tracking-tighter text-wrap antialiased'> President 2023-2024 </div>
             
         </div>
       </div>
