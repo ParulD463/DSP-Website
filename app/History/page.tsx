@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function about(){
+export default function History(){
     return(
         <>
             <h1>First Post</h1>

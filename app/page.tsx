@@ -12,20 +12,65 @@ export default function Home() {
 
   return (
     <>
-       
-      <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" className="black-button mb-3 mt-4 mr-20 hover:bg-black-800" type="button">About </button>
+      <div className='flex flex-nonwrap flex-row'> 
+        <div className='flex ml-10 items-center '> 
+          <div className="spin-on-hover-y rounded-full">
+              <Image
+                src="/delta_sigma_pi_SEAL_image.webp"
+                alt="Delta Sigma Pi Seal"
+                width={50}
+                height={50}
+                
+              /> 
+          </div>   
+        </div>       
 
-      
+      <div className='flex flex-col flex-nonwrap ml-2'>
+        <div className='text-start font-Lato text-lg font-extralight text-white tracking-tight text-nowrap antialiased mt-1'> 
+          Delta Sigma Pi
+        </div>
 
-      <div id="dropdownHover" className="z-20 hidden bg-black divide-y divide-white-100 rounded-lg shadow w-44 dark:bg-white-700">           
-              <Link href="/OurChapter" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
-                Our Chapter           
-              </Link>
-              <Link href="/History" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
-                History            
-              </Link>
-              <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-      </div>                
+        <div className='text-start font-Lato text-base font-thin text-white tracking-tight text-nowrap antialiased mb-2'> 
+          ΠΧ CHAPTER, UC SANTA CRUZ
+        </div>
+      </div>
+        
+        <div className='grid grid-cols-2 gap-x-28 ml-96'> 
+          <div>
+            <button id="aboutDropdownHoverButton" data-dropdown-toggle="about_dropdownHover" data-dropdown-trigger="hover" className="  ml-96  transparent-button mb-3 mt-4  hover:bg-transparent-800 bg-opacity-0" type="button">About </button>
+
+
+
+            <div id="about_dropdownHover" className=" z-20 hidden bg-transparent divide-y divide-transparent-100 rounded-sm shadow w-44 dark:bg-transparent-700">           
+                    <Link href="/ourChapter" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
+                      Our Chapter           
+                    </Link>
+                    <Link href="/History" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
+                      History            
+                    </Link>
+                    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+            </div> 
+          </div>  
+          <div>
+            <button id="brothersDropdownHoverButton" data-dropdown-toggle="brothers_dropdownHover" data-dropdown-trigger="hover" className="transparent-button ml -96 mb-3 mt-4 hover:bg-transparent-800 bg-opacity-0" type="button">Brothers </button>
+
+            
+
+            <div id="brothers_dropdownHover" className="z-20 hidden bg-transparent divide-y divide-transparent-100 rounded-sm shadow w-44 dark:bg-transparent-700">           
+                    <Link href="/ExecutiveBoard" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
+                      Executive Board          
+                    </Link>
+                    <Link href="/Actives" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
+                      Actives            
+                    </Link>
+                    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+            </div> 
+          </div>
+        </div>
+
+      </div>    
+
+             
       <Hero />
 
       {/* "Who We Are" Section (Static) */}
@@ -69,12 +114,16 @@ export default function Home() {
             The Pi Chi Chapter of Delta Sigma Pi is the largest and oldest co-ed professional business fraternity at the University of California, Santa Cruz. Since our founding in 2010, we have been dedicated to creating an environment that gives our brothers an opportunity to grow personally and professionally. As a group of inspired young professionals, we believe in giving back to the community that has shaped us into the people we are today.  
           </p>
         </div>
+        
+        <div> 
+          <Link href="/Actives">
+            <button className="black-white-button mt-11">
+              Meet the Brothers
+            </button>
+          </Link>
+          <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+        </div>        
 
-        <Link href="/active-brothers">
-          <button className="black-white-button mt-11">
-            Meet the Brothers
-          </button>
-        </Link>
       </section>
 
       <div style={{
