@@ -3,9 +3,8 @@ import Image from 'next/image';
 import '../app/globals.css';
 import Link from 'next/link';
 
-import Hero from '../app/components/Hero'
-import CorePillar from '../app/components/CorePillar'
-import Navbar from '../app/components/navbar'
+import Hero from '../components/Hero'
+import CorePillar from '../components/CorePillar'
 import 'flowbite';
 
 export default function Home() {
