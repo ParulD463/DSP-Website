@@ -35,9 +35,9 @@ export default function Home() {
         </div>
       </div>
         
-        <div className='grid grid-cols-2 gap-x-28 ml-96'> 
+        <div className='grid grid-cols-5 gap-x-20 ml-96'> 
           <div>
-            <button id="aboutDropdownHoverButton" data-dropdown-toggle="about_dropdownHover" data-dropdown-trigger="hover" className="  ml-96  transparent-button mb-3 mt-4  hover:bg-transparent-800 bg-opacity-0" type="button">About </button>
+            <button id="aboutDropdownHoverButton" data-dropdown-toggle="about_dropdownHover" data-dropdown-trigger="hover" className="  ml-86  transparent-button mb-3 mt-4  hover:bg-transparent-800 bg-opacity-0" type="button">About </button>
 
 
 
@@ -52,7 +52,7 @@ export default function Home() {
             </div> 
           </div>  
           <div>
-            <button id="brothersDropdownHoverButton" data-dropdown-toggle="brothers_dropdownHover" data-dropdown-trigger="hover" className="transparent-button ml -96 mb-3 mt-4 hover:bg-transparent-800 bg-opacity-0" type="button">Brothers </button>
+            <button id="brothersDropdownHoverButton" data-dropdown-toggle="brothers_dropdownHover" data-dropdown-trigger="hover" className="transparent-button ml-86 mb-3 mt-4 hover:bg-transparent-800 bg-opacity-0" type="button">Brothers </button>
 
             
 
@@ -66,6 +66,48 @@ export default function Home() {
                     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
             </div> 
           </div>
+
+          <div>
+            <button id="careersDropdownHoverButton" data-dropdown-toggle="careers_dropdownHover" data-dropdown-trigger="hover" className="transparent-button ml-86 mb-3 mt-4 hover:bg-transparent-800 bg-opacity-0" type="button">Careers </button>
+
+            
+
+            <div id="careers_dropdownHover" className="z-20 hidden bg-transparent divide-y divide-transparent-100 rounded-sm shadow w-44 dark:bg-transparent-700">           
+                    <Link href="/alumniReflections" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
+                      Alumni Reflections          
+                    </Link>
+                    <Link href="/fullTimeAndInternships" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
+                      FullTime/Internships            
+                    </Link>
+                    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+            </div> 
+          </div>
+
+          <div>
+            <button id="recruitmentDropdownHoverButton" data-dropdown-toggle="recruitment_dropdownHover" data-dropdown-trigger="hover" className="transparent-button ml-86 mb-3 mt-4 hover:bg-transparent-800 bg-opacity-0" type="button">Recruitment </button>
+
+            
+
+            <div id="recruitment_dropdownHover" className="z-20 hidden bg-transparent divide-y divide-transparent-100 rounded-sm shadow w-44 dark:bg-transparent-700">           
+                    <Link href="/Recruitment" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
+                      FAQ          
+                    </Link>
+                    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+            </div> 
+          </div>
+
+          <div>
+            <Link href="/photos">
+              <button
+                id="photosButton"
+                className="transparent-button ml-86 mb-3 mt-4 hover:bg-transparent-800 bg-opacity-0"
+                type="button"
+              >
+                Photos
+              </button>
+            </Link>
+          </div>
+
         </div>
 
       </div>    

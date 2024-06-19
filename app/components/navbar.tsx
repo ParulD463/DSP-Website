@@ -7,7 +7,7 @@ const Navbar = () => {
     return(
         <div className="text-center z-30">
             <main className="p-24">
-            <Link href="../AboutUs.tsx">
+            <Link href="../about/page.tsx">
                 <button className="black-white-button mt-11">
                     About
                 </button>
