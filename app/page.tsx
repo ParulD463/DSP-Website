@@ -48,7 +48,6 @@ export default function Home() {
                     <Link href="/History" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
                       History            
                     </Link>
-                    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
             </div> 
           </div>  
           <div>
@@ -63,7 +62,6 @@ export default function Home() {
                     <Link href="/Actives" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
                       Actives            
                     </Link>
-                    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
             </div> 
           </div>
 
@@ -79,7 +77,6 @@ export default function Home() {
                     <Link href="/fullTimeAndInternships" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
                       FullTime/Internships            
                     </Link>
-                    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
             </div> 
           </div>
 
@@ -92,7 +89,6 @@ export default function Home() {
                     <Link href="/Recruitment" className="block px-4 py-2 hover:bg-black-100 dark:hover:bg-grey dark:hover:text-yellow hover:text-yellow-500">
                       FAQ          
                     </Link>
-                    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
             </div> 
           </div>
 
@@ -163,7 +159,6 @@ export default function Home() {
               Meet the Brothers
             </button>
           </Link>
-          <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
         </div>        
 
       </section>
